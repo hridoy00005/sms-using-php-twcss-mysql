@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-legacy-class {
+    padding: 5px;
+    margin: 5px;
+    background: red;
+}
