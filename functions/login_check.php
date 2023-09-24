@@ -3,12 +3,7 @@
 session_start();
 error_reporting(0);
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$db = "schoolproject";
-
-$data = mysqli_connect($host, $user, $password, $db);
+include './db_connection.php'; //Database Connection
 
 if (!$data) {
     die("Connection error");
@@ -23,14 +18,13 @@ if (!$data) {
         $result = mysqli_query($data, $sql);
         if ($result) {
             $row = mysqli_fetch_array($result);
-            if ($row['usertype'] == 'admin') {
 
+            if ($row['usertype'] == 'admin') {
                 $_SESSION['username'] = $username;
                 $_SESSION['usertype'] = 'admin';
 
                 header("location:../pages/adminhome.php");
             } elseif ($row['usertype'] == 'student') {
-
                 $_SESSION['username'] = $username;
                 $_SESSION['usertype'] = 'student';
 

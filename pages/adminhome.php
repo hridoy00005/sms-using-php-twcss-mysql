@@ -7,7 +7,6 @@ if (!isset($_SESSION['username'])) {
     header("location:./login.php");
 }
 
-// $_SESSION['login']=true;
 ?>
 
 <!DOCTYPE html>
@@ -16,13 +15,21 @@ if (!isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Dashboard</title>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../style/main.css">
 </head>
 
 <body>
-    <h1>Admin Home</h1>
+   
+<?php
+include '../components/admin_sidebar.php';
 
-    <a href="../functions/logout.php">Logout</a>
+?>
+
+    <div class="ml-[20%] mt-[5%]">
+        <h2 class="text-4xl mb-2">Admin Dashboard</h2>
+    </div>
+
 </body>
 
 </html>

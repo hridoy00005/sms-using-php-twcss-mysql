@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Hidding scrollbar in the input fields */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .my-legacy-class {
     padding: 5px;
     margin: 5px;

@@ -1,3 +1,17 @@
+<?php
+error_reporting(0);
+session_start();
+session_destroy();
+
+if ($_SESSION['message']) {
+    $message = $_SESSION['message'];
+    echo "<script type='text/javascript'>
+    alert('$message');
+    </script>";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -88,25 +102,25 @@
         <h1 class="text-4xl  pt-[70px]">Admission Form</h1>
     </center>
     <div align='center' class="pt-[30px]">
-        <form action="">
+        <form action="./functions/data_check.php" method="POST">
             <div>
                 <label class="w-24 text-right pr-3" for="">Name</label>
-                <input class="w-[30%] h-10 border border-blue-900 rounded-xl p-1" type="text" placeholder="Enter Your Name" name="">
+                <input class="w-[30%] h-10 border border-blue-900 rounded-xl p-1" type="text" placeholder="Enter Your Name" name="name">
             </div>
             <div class="py-5">
                 <label class="w-24 text-right pr-3" for="">Email</label>
-                <input class="w-[30%] h-10 border border-blue-900 rounded-xl p-1" type=" text" placeholder="Enter Your Email" name="">
+                <input class="w-[30%] h-10 border border-blue-900 rounded-xl p-1" type=" text" placeholder="Enter Your Email" name="email">
             </div>
             <div>
                 <label class="w-24 text-right pr-3" for="">Phone</label>
-                <input class="w-[30%] h-10 border border-blue-900 rounded-xl p-1" type=" email" placeholder="Enter Your Phone Number" name="">
+                <input class="w-[30%] h-10 border border-blue-900 rounded-xl p-1" type=" email" placeholder="Enter Your Phone Number" name="phone">
             </div>
             <div class="py-5">
                 <label class="w-24 text-right " for="">Message</label>
-                <textarea class="mr-1 w-[30%] h-[130px] border border-blue-900 rounded-xl p-1"></textarea>
+                <textarea class="mr-1 w-[30%] h-[130px] border border-blue-900 rounded-xl p-1" name="message"></textarea>
             </div>
             <div>
-                <input class="w-[15%] relative left-5 mx-3 text-white text-sm font-bold bg-green-600 rounded-xl py-2 px-3 hover:bg-green-700" type="submit" placeholder="Submit">
+                <input class="w-[15%] relative left-5 mx-3 text-white text-sm font-bold bg-green-600 rounded-xl py-2 px-3 hover:bg-green-700" type="submit" name="apply" value="Apply">
             </div>
         </form>
     </div>

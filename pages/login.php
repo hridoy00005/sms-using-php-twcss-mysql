@@ -1,12 +1,17 @@
 <?php
-// session_start();
+session_start();
 
-// if ($_SESSION['loggedin']=='true')
-//     if ($_SESSION['usertype'] == 'student') {
-//         header("location:./studenthome.php");
-//     } else {
-//         header("location:./adminhome.php");
-//     }
+//Login Check
+if ($_SESSION['usertype'] == 'student') {
+    header("location:./studenthome.php");
+    exit();
+} elseif ($_SESSION['usertype'] == 'admin') {
+    header("location:./adminhome.php");
+    echo 'admin';
+    exit();
+}
+
+
 ?>
 
 <!DOCTYPE html>
