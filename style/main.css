@@ -658,10 +658,6 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -674,16 +670,8 @@ video {
   margin-top: 5%;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-\[3\%\] {
-  margin-top: 3%;
+.mt-\[10\%\] {
+  margin-top: 10%;
 }
 
 .flex {
@@ -857,6 +845,11 @@ video {
   padding-right: 0.25rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-24 {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -892,23 +885,20 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .pr-3 {
   padding-right: 0.75rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-\[100px\] {
+  padding-top: 100px;
 }
 
 .pt-\[30px\] {
@@ -923,20 +913,8 @@ video {
   padding-top: 70px;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
+.pt-\[10\%\] {
+  padding-top: 10%;
 }
 
 .text-center {
@@ -989,6 +967,11 @@ video {
   font-weight: 600;
 }
 
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 .text-red-700 {
   --tw-text-opacity: 1;
   color: rgb(185 28 28 / var(--tw-text-opacity));
@@ -997,6 +980,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-400 {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 /* Hidding scrollbar in the input fields */

@@ -34,7 +34,7 @@ if ($_SESSION['uploaded']) {
     ?>
 
     <center>
-        <div class="ml-[20%] mt-[3%]">
+        <div class="ml-[20%] pt-[100px]">
             <h2 class="text-4xl mb-2">Add Student</h2>
             <br>
 

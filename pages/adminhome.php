@@ -26,7 +26,7 @@ include '../components/admin_sidebar.php';
 
 ?>
 
-    <div class="ml-[20%] mt-[5%]">
+    <div class="ml-[20%] pt-[100px]">
         <h2 class="text-4xl mb-2">Admin Dashboard</h2>
     </div>
 
