@@ -1,5 +1,6 @@
 <?php
 session_start();
+error_reporting(0);
 
 //Login Check
 if ($_SESSION['usertype'] == 'student') {
@@ -31,7 +32,6 @@ if ($_SESSION['usertype'] == 'student') {
                 <h1 class="text-4xl text-white font-bold py-6">Login Form</h1>
                 <h2 class="text-lg text-red-700 mb-4">
                     <?php
-                    error_reporting(0);
                     session_start();
                     session_destroy();
                     echo $_SESSION["loginMessage"];

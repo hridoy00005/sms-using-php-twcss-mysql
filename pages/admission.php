@@ -29,7 +29,7 @@ $result = mysqli_query($data, $sql);
 
 <body>
     <?php
-    include '../components/admin_sidebar.php';
+    include '../components/admin_layer.php';
     ?>
 
     <center>

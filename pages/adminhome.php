@@ -22,7 +22,7 @@ if (!isset($_SESSION['username'])) {
 <body>
    
 <?php
-include '../components/admin_sidebar.php';
+include '../components/admin_layer.php';
 
 ?>
 
