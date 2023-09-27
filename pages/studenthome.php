@@ -21,7 +21,7 @@ if (!isset($_SESSION['username'])) {
 </head>
 
 <body>
-    <header class="bg-sky-300 h-[70px] flex justify-between items-center px-7">
+    <!-- <header class="bg-sky-300 h-[70px] flex justify-between items-center px-7">
         <a class="text-white text-lg font-bold" href="">Student Dashboard</a>
         <a class=" text-white text-sm bg-green-600 rounded-xl py-2 px-3 hover:bg-green-700" href="../functions/logout.php">Logout</a>
     </header>
@@ -32,9 +32,14 @@ if (!isset($_SESSION['username'])) {
             <li class="mb-7 text-base text-white font-bold hover:text-blue-300"><a href="">My Result</a></li>
 
         </ul>
-    </aside>
+    </aside> -->
 
-    <div class="ml-[20%] mt-[5%]">
+    <?php
+    include '../components/student_layer.php';
+    ?>
+
+
+    <div class="ml-[20%] pt-[100px]">
         <h2 class="text-4xl mb-2">Hello Student</h2>
     </div>
 
