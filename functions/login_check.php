@@ -22,18 +22,16 @@ if (!$data) {
             if ($row['usertype'] == 'admin') {
                 $_SESSION['username'] = $username;
                 $_SESSION['usertype'] = 'admin';
-
                 header("location:../pages/adminhome.php");
+
             } elseif ($row['usertype'] == 'student') {
                 $_SESSION['username'] = $username;
                 $_SESSION['usertype'] = 'student';
-
                 header("location:../pages/studenthome.php");
-            } else {
 
+            } else {
                 $message = "username or password does not match";
                 $_SESSION['loginMessage'] = $message;
-
                 header("location:../pages/login.php");
             }
         } else {
