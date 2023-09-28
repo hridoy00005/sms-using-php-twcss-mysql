@@ -35,17 +35,17 @@ $result = mysqli_query($data, $sql);
     <center>
         <div class="ml-[20%] pt-[100px]">
             <h2 class="text-4xl mb-2">View Teacher</h2>
-            <!-- <span class="text-green-600">
+            <span class="text-green-600">
                 <?php
-                // if ($_SESSION['messagedel']) {
-                //     echo $_SESSION['messagedel'];
-                // } elseif ($_SESSION['messageupdate'])
+                if ($_SESSION['messagedel']) {
+                    echo $_SESSION['messagedel'];
+                 } //elseif ($_SESSION['messageupdate'])
                 //     echo $_SESSION['messageupdate'];
 
-                // unset($_SESSION['messagedel']); //Unset empty a variable in php
+                unset($_SESSION['messagedel']); //Unset empty a variable in php
                 // unset($_SESSION['messageupdate']); //Unset empty a variable in php
                 ?>
-            </span> -->
+            </span>
 
             <br>
             <table class="mb-2 border">
@@ -53,6 +53,8 @@ $result = mysqli_query($data, $sql);
                     <th class="p-5 border">Name</th>
                     <th class="p-5 border">About</th>
                     <th class="p-5 border">Image</th>
+                    <th class="p-5 border">Delete</th>
+                    <th class="p-5 border">Update</th>
                 </tr>
                 <?php
                 while ($info = $result->fetch_assoc()) {
@@ -61,6 +63,8 @@ $result = mysqli_query($data, $sql);
                         <td class="p-5 border"><?php echo $info["name"] ?></td>
                         <td class="p-5 border"><?php echo $info["description"] ?></td>
                         <td class="p-5 border "><img height="110px" width="110px" src="../images/teacher1.jpg" alt=""></td>
+                        <td class="p-5 border"><?php echo "<a class='text-white text-sm font-semibold bg-red-600 rounded-xl py-2 px-3 hover:bg-red-700' onclick=\"confirm('Are You Sure to Delete?');\" href='../functions/teacher_delete.php?teacher_id={$info['id']}'>Delete</a>" ?></td>
+                        <td class="p-5 border"><?php echo "<a class='text-white text-sm font-semibold bg-blue-600 rounded-xl py-2 px-3 hover:bg-blue-700' href='./update_teacher.php?teacher_id={$info['id']}'>Update</a>" ?></td>
                     </tr>
                 <?php
                 }
