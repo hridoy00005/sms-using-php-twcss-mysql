@@ -10,7 +10,7 @@
         <li class="mb-7 text-base text-white font-bold hover:text-blue-300"><a href="../pages/admission.php">Admission</a></li>
         <li class="mb-7 text-base text-white font-bold hover:text-blue-300"><a href="../pages/add_student.php">Add Student</a></li>
         <li class="mb-7 text-base text-white font-bold hover:text-blue-300"><a href="../pages/view_student.php">View Student</a></li>
-        <li class="mb-7 text-base text-white font-bold hover:text-blue-300"><a href="">Add Teacher</a></li>
+        <li class="mb-7 text-base text-white font-bold hover:text-blue-300"><a href="../pages/add_teacher.php">Add Teacher</a></li>
         <li class="mb-7 text-base text-white font-bold hover:text-blue-300"><a href="">View Teacher</a></li>
         <li class="mb-7 text-base text-white font-bold hover:text-blue-300"><a href="">Add Courses</a></li>
         <li class="mb-7 text-base text-white font-bold hover:text-blue-300"><a href="">View Courses</a></li>

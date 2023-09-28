@@ -58,7 +58,7 @@ if ($_SESSION['uploaded']) {
                         <input type="text" name="password" class="border px-1 mx-2 w-[60%] rounded">
                     </div>
                     <div>
-                        <input type="submit" name="add_student" value="Add Student" class=" text-white text-sm font-semibold bg-green-600 rounded-xl py-2 px-3 mt-5 hover:bg-green-700">
+                        <input type="submit" name="add_student" value="Add Student" class=" text-white text-sm font-bold bg-green-600 rounded-xl py-2 px-5 mt-5 hover:bg-green-700">
                     </div>
                 </form>
             </div>
