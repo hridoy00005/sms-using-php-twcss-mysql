@@ -666,10 +666,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-\[5\%\] {
-  margin-top: 5%;
-}
-
 .flex {
   display: flex;
 }
@@ -718,6 +714,14 @@ video {
   height: 100vh;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
+.h-\[110px\] {
+  height: 110px;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -752,6 +756,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-\[110px\] {
+  width: 110px;
 }
 
 .grid-cols-12 {

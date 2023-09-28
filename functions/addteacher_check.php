@@ -6,14 +6,14 @@ include './db_connection.php';
 if (isset($_POST['add_teacher'])) {
     $name = $_POST['name'];
     $description = $_POST['description'];
-    $pname = rand(1000, 10000) . '-' . $_FILES['file']['name'];
+    $pname = $_FILES['file']['name'];
 
     $tname = $_FILES['file']['tmp_name'];
 
-    $dir = "../images/";
+    $dir = "./images/";
 
     define('SITE_ROOT', realpath(dirname(__FILE__))); //need define for pc restriction
-    move_uploaded_file($tname, SITE_ROOT . $dir . $pname);
+    move_uploaded_file($tname, SITE_ROOT.$dir.$pname);
 
 
 

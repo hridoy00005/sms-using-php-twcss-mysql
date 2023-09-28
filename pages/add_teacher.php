@@ -65,8 +65,8 @@ if ($_SESSION['uploaded']) {
                     <br>
                     
                     <div class="flex mb-3 ">
-                        <label class="w-[30%] text-right font-semibold py-2">Image</label>
-                        <input type="file" name="file" class="border px-1 mx-2 w-[60%] rounded">
+                        <label class="w-[30%] text-right font-semibold">Image</label>
+                        <input type="file" name="file" class="px-1 mx-2 w-[60%] rounded">
                     </div>
                     <div>
                         <input type="submit" name="add_teacher" value="Add" class=" text-white text-sm font-bold bg-green-600 rounded-xl py-2 px-5 mt-5 hover:bg-green-700">
